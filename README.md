@@ -26,7 +26,7 @@ If docker and libvirt are on the same host
 ```yaml
 services: 
   virt-manager:
-    image: mber5/virt-manager:latest
+    image: antipatico/virt-manager:latest
     restart: always
     ports:
       - 127.0.0.1:8185:80
@@ -53,7 +53,7 @@ If docker and libvirt are on different hosts
 ```yaml
 services: 
   virt-manager:
-    image: mber5/virt-manager:latest
+    image: antipatico/virt-manager:latest
     restart: always
     ports:
       - 127.0.0.1:8185:80
@@ -70,7 +70,7 @@ services:
 ```
 ### Building from Dockerfile
 ```bash
-    git clone https://github.com/m-bers/docker-virt-manager.git
+    git clone https://github.com/antipatico/docker-virt-manager.git
     cd docker-virt-manager
     docker build -t docker-virt-manager . && docker-compose up -d
 ```
